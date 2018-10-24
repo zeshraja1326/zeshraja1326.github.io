@@ -1,6 +1,17 @@
-body {margin: 0;}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("rio_olympics_2016.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100%;
+    background-size: cover;
+}
 
 ul.topnav {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,4 +38,37 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
+}
+
+#countries {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#countries td, #countries th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#countries tr:nth-child(even){background-color: #f2f2f2;}
+
+#countries tr:hover {background-color: #ddd;}
+
+#countries th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
 }
