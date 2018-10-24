@@ -7,6 +7,7 @@ body, html {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     height: 100%;
+
 }
 
 ul.topnav {
@@ -62,6 +63,14 @@ ul.topnav li.right {float: right;}
     color: white;
 }
 
+.content {
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -71,3 +80,8 @@ ul.topnav li.right {float: right;}
     color: white;
     text-align: center;
 }
+
+img {
+    max-width: 50%;
+    border-radius: 8px;
+  }
